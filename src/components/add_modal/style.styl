@@ -1,0 +1,67 @@
+.createPost
+	position fixed
+	display flex
+	justify-content center
+	align-items center
+	left 0
+	top 0
+	width 100vw
+	height 100vh
+	background-color rgba(0, 0, 0, .5)
+	transition .3s
+	opacity 0
+	visibility hidden
+	&.open
+		transition .3s
+		opacity 1
+		visibility visible
+    .wrapper
+		width 700px
+		position relative
+		margin 0 auto
+		display flex
+		flex-direction column
+		padding 10px
+		background-color white
+		h2
+			margin: 11px 0px 60px 45px
+			font-family: "Montserrat"
+			font-size: 30px
+		#error
+			height 20px
+			color red
+        input
+			height: 35px
+			border: none
+			border-bottom: 2px solid black
+			padding: 6px 0 4px 10px;
+			margin 30px auto
+			outline: none
+			font-family: "Montserrat"
+			font-size: 18px
+			transition: 0.2s ease all
+			width: 85%
+		button
+			margin 30px auto
+			height: 60px
+			width: 85%
+			border: none
+			outline: none
+			background: black
+			font-family: "Montserrat"
+			font-size: 30px
+			color: white
+			cursor pointer
+		.closeModal
+			margin-right: 15px
+			font-family: "Montserrat"
+			cursor pointer
+			font-size 50px
+			transform rotate(45deg)
+			color black
+			outline 0
+			position absolute
+			top 10px
+			right 10px
+			border 0
+			background transparent

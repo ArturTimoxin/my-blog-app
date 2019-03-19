@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900')
+@import '../components/header/style.styl'
+@import '../components/add_modal/style.styl'
+body
+    margin 0
+    position relative
+    background-color: #f7f7f7
+    .myBlog
+        margin 0 auto
+        box-sizing border-box
+        .addPost
+            position: absolute
+            margin 25px 0 0 25px
+            height: 50px
+            width: 50px
+            background: url(/images/add.svg) 100% 100% no-repeat
+            background-size: cover
+            cursor pointer
+        .postList
+            padding: 0
+            list-style-type: none
+            .postItem
+                margin 100px auto
+                max-width 40%
+                padding: 40px
+                border: 4px solid black
+                box-shadow: 0px 30px 40px 0.6px rgba(16, 16, 39, 0.34);
+                background-color: white
+                .title
+                    font-family: "Montserrat"
+                    font-size: 25px
+                    font-style: normal
+                    font-size: 18px
+                    font-weight: 600
+                    font-style: normal
+                    font-stretch: normal
+                    line-height: 1.78
+                    letter-spacing: 0.5px
+                .image
+                    width: 100%
+                    height 50%
+                .description
+                    font-family: "Montserrat"
+                    font-size: 14px
+                    font-weight: 300
+                    font-style: normal
+                    font-stretch: normal
+                    line-height: 1.79
+                    letter-spacing: 0.4px
+                    text-align: left
+
+
+            

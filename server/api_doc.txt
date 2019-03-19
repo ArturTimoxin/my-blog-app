@@ -1,0 +1,13 @@
+GET http://localhost:3000/
+
+GET http://localhost:3000/posts
+GET http://localhost:3000/posts/{id}
+
+
+POST http://localhost:3000/posts   		body -> {"name":"New"}
+DELETE http://localhost:3000/posts/{id}
+
+
+
+
+
