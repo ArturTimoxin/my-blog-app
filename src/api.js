@@ -1,4 +1,5 @@
 const api = (postID, method, body) => {
+
 	let options = {
 		method: 'GET'
 	}
@@ -15,7 +16,7 @@ const api = (postID, method, body) => {
 	}
 
 	return fetch(
-		`http://localhost:3003/posts${postID ? `/${postID}` : ''}`,
+		`${process.env.REACT_APP_API_URL}/posts${postID ? `/${postID}` : ''}`,
 		options
 	).then(res => {
 		return res.json()
